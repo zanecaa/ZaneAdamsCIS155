@@ -1,43 +1,87 @@
-<!-- 
-    Name:
-    Date:
-    Course:
-    Instructor:
-    Assignment: Basic Site for CIS 155
-    Notes:
-
--->
 <!DOCTYPE html>
 <html>
-<body>
-<h1>CIS 155 Project</h1>
-<p>
-    <ul>
-    <li><a href="">V1 Project</a></li>
-    <li><a href="">V2 Project</a></li>
-    <li><a href="">V3 Project</a></li>    
-    <li><a href="">V4 Project</a></li>
-    </ul>
-</p>
-<p>
-    <!-- Version objectives are those HTML/CSS Module Level Objectives that are required for each version demonstrating your understanding and progress within the class. For example, see M02: Project V1 - Basic HTML and CSS for your V1 Submission -->
-    <h3>V1 Module Level Objectives</h3>
-    <ul>
-        <!-- For example, by adding the list item below, you are committing to having it in your assignment and you have placed the M1L06 next to the element in your code so I can easily find it. You will need to do this for all consequent module level objectives. -->
-        <li><b>M1LO6</b> Demonstrate the use of basic HTML tags to create a simple Web page (HTML, this item should be specified once, describing how the file it is in meets this outcome)</li>
-    </ul>
-    <h3>V2 Module Level Objectives</h3>
-    <ul>
-        <li></li>
-    </ul>
-    <h3>V3 Module Level Objectives</h3>
-    <ul>
-        <li></li>
-    </ul>
-    <h3>V4 Module Level Objectives</h3>
-    <ul>
-        <li></li>
-    </ul>
-</p>
-</body>
+   <!--M1LO6 Demonstrate the use of basic HTML tags to create a simple Web page-->
+    <head>
+        <!--
+        Project V1 - Basic HTML and CSS
+
+        Author: Zane Adams
+        Date: 1/25/2021
+        -->
+
+        <meta charset="utf-8" />
+        <title>Game Design Tips</title>
+        <!--M1LO8 Demonstrate the use of external style sheets-->
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h1>
+                GAME DESIGN TIPS AND TRICKS
+                <!--M1LO9 Demonstrate the use of inline images-->
+                <img src="controllerpic.png" alt="">
+            </h1>
+
+            <nav>
+                <!--M1LO12 Create navigation using unordered lists-->
+                <ul>
+                    <!--
+                        M1LO13 Demonstrate using 3 types of hyperlinks:
+                        site navigation, targeted location using ids, and external
+                    -->
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="">EXAMPLES</a></li>
+                    <li><a href="">GUIDE</a></li>
+                    <li><a href="">RESOURCES</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="welcome">
+            <p>
+                Hello there! Welcome to Game Design Tips and Tricks- <u>a website to
+                assist you with any game development endeavors!</u> Check out some of my
+                examples above or take a look at my guides. Have fun and learn something new!
+            </p>
+            
+            <h1>THE PROCESS AT A GLANCE</h1>
+            <!--M1LO7 Demonstrate the use of ordered list-->
+            <ol>
+                <li>Planning</li>
+                <li>></li>
+                <li>Development</li>
+                <li>></li>
+                <li>Testing</li>
+                <li>></li>
+                <li>Launch</li>
+                <li>></li>
+                <li>Post-Development</li>
+            </ol>
+            
+            <section id="bigtext">
+                <!--M2LO4 Demonstrate external, embedded, and inline styles-->
+                <style>
+                    section#bigtext {
+                        font-size: 200pt;
+                    }
+                </style>
+
+                <!--M2LO4 Demonstrate external, embedded, and inline styles-->
+                <p style="color:black;">
+                    Don't know what to put here... come back soon.
+                </p>
+            </section>
+        </section>
+
+        <footer>
+            <address>
+                <!--M1LO10 Demonstrate the use of special characters from extended character sets-->
+                Zane Adams &#8226; CIS155 &#8226; 2021
+            </address>
+        </footer>
+    </body>
 </html>
