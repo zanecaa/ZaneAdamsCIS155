@@ -43,7 +43,7 @@ section#examples div#right {
     float: right;
 }
 
-section#examples div#tip {
+section#examples div.tip {
     float: none;
     clear: both;
     height: 50px;
@@ -66,7 +66,7 @@ div img {
     transform: rotate(2deg);
 }
 
-div img#right {
+div img.right {
     transform: rotate(-2deg);
 }
 
