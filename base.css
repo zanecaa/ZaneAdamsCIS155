@@ -48,13 +48,23 @@ a {
     text-decoration: none;
 }
 
-li {
-    /*M2LO12 Demonstrate how CSS can change presentation of page element*/
-    list-style-type: none;
-    display: inline;
-    font-size: 20pt;
-    padding: 10px;
-    padding-right: 50px;
+@media only screen and (min-width: 480px) {
+    li {
+        list-style-type: none;
+        display: inline;
+        font-size: 20pt;
+        padding: 10px;
+        padding-right: 50px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    li {
+        list-style-type: none;
+        display: inline;
+        font-size: 10pt;
+    }
 }
 
 /*M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector*/
@@ -92,4 +102,20 @@ section#about {
 
 section#about li{
     display: list-item;
+}
+
+ul.examplesub {
+    display: none;
+}
+
+a:hover+ul.examplesub, ul.examplesub:hover {
+    display: inline;
+}
+
+/*M5LO4 Use CSS for pull-down menus (or collapsible/expandable areas)
+Hover over the examples tab to view the subsections.
+*/
+a:hover+ul.examplesub, ul.examplesub:hover, ul.examplesub li {
+    font-size: 12pt;
+    margin-right: -50px;
 }

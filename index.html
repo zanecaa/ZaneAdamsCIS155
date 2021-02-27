@@ -3,13 +3,14 @@
    <!--M1LO6 Demonstrate the use of basic HTML tags to create a simple Web page-->
     <head>
         <!--
-        Project V2 - Basic HTML and CSS
+        Project V3 - Basic HTML and CSS
 
         Author: Zane Adams
-        Date: 2/4/2021
+        Date: 2/20/2021
         -->
 
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Game Design Tips</title>
         <!--M1LO8 Demonstrate the use of external style sheets-->
         <link rel="stylesheet" href="reset.css">
@@ -36,7 +37,14 @@
                     -->
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="examples.html">EXAMPLES</a></li>
+                    <li>
+                        <a href="examples.html">EXAMPLES</a>
+                        <ul class="examplesub">
+                            <li><a href="">STYLES</a></li>
+                            <li><a href="">GENRES</a></li>
+                            <li><a href="">MECHANICS</a></li>
+                        </ul>
+                    </li>
                     <li><a href="">GUIDE</a></li>
                     <li><a href="">RESOURCES</a></li>
                 </ul>
@@ -49,35 +57,69 @@
                 assist you with any game development endeavors!</u> Check out some of my
                 examples above or take a look at my guides. Have fun and learn something new!
             </p>
-            
+            <br/>
             <h1>THE PROCESS AT A GLANCE</h1>
-            <!--M1LO7 Demonstrate the use of ordered list-->
-            <ol>
-                <li>Planning</li>
-                <li>></li>
-                <li>Development</li>
-                <li>></li>
-                <li>Testing</li>
-                <li>></li>
-                <li>Launch</li>
-                <li>></li>
-                <li>Post-Development</li>
-            </ol>
-            
-            <section id="bigtext">
-                <!--M2LO4 Demonstrate external, embedded, and inline styles-->
-                <style>
-                    section#bigtext {
-                        font-size: 200pt;
-                    }
-                </style>
-
-                <!--M2LO4 Demonstrate external, embedded, and inline styles-->
-                <p style="color:black;">
-                    Don't know what to put here... come back soon.
-                </p>
-            </section>
         </section>
+
+        <!--M6LO3 Demonstrate how to create a table
+            This table will briefly cover some of the
+            steps involved in each devlopment process.
+        -->
+        <table id="phases">
+            <colgroup>
+               <col id="firstCol"/>
+               <!--M6LO4 Demonstrate how to span multiple rows or multiple columns in a table-->
+               <col id="dataCols" span="4"/>
+            </colgroup>
+      
+               <thead>
+                  <tr>
+                     <th>Planning</th>
+                     <th>Development</th>
+                     <th>Testing</th>
+                     <th>Launch</th>
+                     <th>Post-Development</th>
+                  </tr>
+               </thead>
+      
+               <tbody>
+                  <tr>
+                     <td>blah blah blah</td>
+                     <td>blah blah blah</td>
+                     <td>blah blah blah</td>
+                     <td>blah blah blah</td>
+                     <td>blah blah blah</td>
+                  </tr>
+                  <tr>
+                    <td>blah blah blah</td>
+                    <td>blah blah blah</td>
+                    <td>blah blah blah</td>
+                    <td>blah blah blah</td>
+                    <td>blah blah blah</td>
+                  </tr>
+                  <tr>
+                    <td>blah blah blah</td>
+                    <td>blah blah blah</td>
+                    <td>blah blah blah</td>
+                    <td>blah blah blah</td>
+                    <td>blah blah blah</td>
+                  </tr>
+                  <tr>
+                    <td>blah blah blah</td>
+                    <td>blah blah blah</td>
+                    <td>blah blah blah</td>
+                    <td>blah blah blah</td>
+                    <td>blah blah blah</td>
+                  </tr>
+                  <tr>
+                    <td>blah blah blah</td>
+                    <td>blah blah blah</td>
+                    <td>blah blah blah</td>
+                    <td>blah blah blah</td>
+                    <td>blah blah blah</td>
+                  </tr>
+               </tbody>
+         </table>
 
         <footer>
             <address>
