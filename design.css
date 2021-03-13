@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+/*
+Project V3 - Basic HTML and CSS
+
+Author: Zane Adams
+Date: 2/4/2021
+*/
+
+/*
+Image Credits
+https://www.lmhpoly.com/game-assets/low-poly-trees-pack
+https://www.teardowngame.com/
+https://www.pcgamesn.com/terraria/houses-designs-housing
+*/
+
+/*M4LO2 Demonstrate the use of background images*/
+html {
+    background-image: url(background.jpg);
+}
+
+/*M4LO4 Demonstrate the use of gradients*/
+/*M4LO5 Demonstrate the use of text or box shadowing*/
+header nav {
+    background: linear-gradient(60deg, rgb(68, 66, 66), rgb(153, 148, 148), rgb(187, 181, 181));
+    text-shadow: black 10px 6px 10px;
+}
+
+
+section#examples div.tip {
+    float: none;
+    clear: both;
+    height: 50px;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0%;
+}    
+
+/*M5LO3 Use media queries to format a page differently for phones vs. PCs*/
+@media only screen and (min-width: 480px) {
+    section#examples div {
+        background-color: grey;
+        margin: 1%;
+        width: 48%;
+        height: 500px;
+        float: left;
+        text-align: center;
+        /*M4LO3 Demonstrate the use of rounded corners for borders*/
+        border: 4px double grey;
+        border-radius: 30px;
+    }
+    
+    section#examples div#right {
+        float: right;
+        text-align: justify;
+        font-size: 20px;
+        height: auto;
+    }
+
+    section#examples div#left {
+        float: left;
+        text-align: justify;
+        font-size: 20px;
+        height: auto;
+    }
+
+    section#examples div#imagesr {
+        float: right;
+        overflow: scroll;
+    }
+
+    section#examples div#center {
+        float: none;
+        text-align: center;
+        font-size: 20px;
+        height: auto;
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0%;
+    }
+
+    /*M3LO10 Demonstrate an overflow setting */
+    section#examples div#images {
+        overflow: scroll;
+    }
+
+    figure figcaption {
+        text-align: center;
+    }
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    section#examples div {
+        background-color: grey;
+        margin: 1%;
+        width: 85%;
+        height: 50%;
+        float: center;
+        text-align: center;
+        /*M4LO3 Demonstrate the use of rounded corners for borders*/
+        border: 4px double grey;
+        border-radius: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    figure figcaption {
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+/*M3LO8B Demonstrate relative positioning*/
+div img {
+    position: relative;
+    top: 2px;
+    margin: 5%;
+    width: 70%;
+    max-width: 700px;
+    border: 4px;
+    border-radius: 30px;
+    /*M4LO8 Demonstrate the use of transformations for 2D or 3D images*/
+    transform: rotate(2deg);
+}
+
+div img.right {
+    transform: rotate(-2deg);
+}
+
+/*M3LO3 Demonstrate a clearing floats*/
+footer {
+    clear: both;
+    content: "";
+    margin-top: 2%;
+}
+
+/*M6LO7 Demonstrate how to format a table with CSS*/
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    background: linear-gradient(60deg, rgb(68, 66, 66), rgb(153, 148, 148), rgb(187, 181, 181));
+}
+ 
+table th, td {
+    padding: 8px;
+    border: 5px solid grey;
+}
+ 
+th {
+    color: black;
+    font-size: 50px;
+}
+ 
+td {
+    color: white;
+    font-size: 20px;
+}
+
+col#firstCol {
+    column-width: 24%;
+}
+ 
+col.dataCols {
+    column-width: 19%;
+}
+ 
